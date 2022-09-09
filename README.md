@@ -39,7 +39,7 @@ scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 .
 
 ### Step 5: watch labelled video and run .h5 through quality control script
 
-## Creating Contour
+## Create Contour
 
 ### Step 1: Take the contour of fish, adjust kernel size and masking as needed
 
