@@ -1,8 +1,11 @@
-# Preprocess_input_daart
+#Preprocess_input_daart
+
 
 ### navigate to the Process_input folder in terminal
 
 cd ~/Desktop/GitHub/Process_input/
+
+
 
 ## Convert .h264 files to .mp4, crop videos, and concat together
 
@@ -16,27 +19,31 @@ python /scripts/crop_videos.py "lesion3"
 
 rm -r -- ./*/
 
+
+
+
 ## Track bodyparts in DeepLabCut
 
-### sign into axon and transfer files to correct folder in axon
+### Step 1: Sign into axon and transfer files to correct folder in axon
 
 ssh cpe2108@axon.rc.zi.columbia.edu
 scp /videos/*.mp4 cpe2108@axon.rc.zi.columbia.edu:~/top_FEb27_update/top_videos/
 
-### Run top track and label
+### Step 2: Run top track and label
 
 sbatch ~/python_scripts/dlc_analyze_top_Feb27update.sh
 
-### make labelled videos once the tracking is done and before you transfer files out of the top_videos folder
+### Step 3: Make labelled videos once the tracking is done and before you transfer files out of the top_videos folder
 
 sbatch ~/python_scripts/dlc_label_top.sh
 
-### export .h5 and labelled videos into designated folders
+### Step 4: Export .h5 and labelled videos into designated folders
 
 scp cpe2108@axon.rc.zi.columbia.edu:~/top_FEb27_update/top_videos/*.h5 ./h5/
 scp cpe2108@axon.rc.zi.columbia.edu:~/top_FEb27_update/top_videos/*labeled.mp4 ./labeled_videos/
 
-### watch labelled video and run .h5 through quality control script
+### Step 5: watch labelled video and run .h5 through quality control script
+
 
 
 ## Creating Contour
