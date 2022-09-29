@@ -33,13 +33,6 @@ scp videos/*.mp4 cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/
 ```
 sbatch ~/python_scripts/dlc_analyze_top_Feb27update.sh
 ```
-## Trim video
-### Trimming the video to only the test period allows for a faster contour step. You can do this while you wait for DLC. 
-
-## Step 1: Run trimming script
-```
-python scripts/trim_videos.py
-```
 ### Step 3: Make labelled videos once the tracking is done and before you transfer files out of the top_videos folder
 ```
 sbatch ~/python_scripts/dlc_label_Feb27.sh
@@ -51,6 +44,13 @@ scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 .
 ```
 ### Step 5: watch labelled video and run .h5 through quality control script
 
+## Trim video
+### Trimming the video to only the test period allows for a faster contour step. You can do this while you wait for DLC. 
+
+## Step 1: Run trimming script
+```
+python scripts/trim_videos.py
+```
 ## Create Contour
 
 ### Step 1: Take the contour of fish, adjust kernel size and masking as needed
