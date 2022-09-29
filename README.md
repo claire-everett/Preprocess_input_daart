@@ -72,11 +72,11 @@ python scripts/basefeatures_input_CE.py
 ```
 conda activate daart
 
-cd /scripts/
+cd scripts/
 
 jupyter notebook betta_report.ipynb
 ```
-
+## click through the notebook to generate .npy of binary time series (found in Process_input>version_0) and daart validation metrices (found in Process_input>daart_output)
 
 
 
