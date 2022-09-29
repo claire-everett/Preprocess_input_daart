@@ -47,7 +47,7 @@ scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 .
 ## Trim video
 ### Trimming the video to only the test period allows for a faster contour step. You can do this while you wait for DLC. 
 
-## Step 1: Run trimming script
+### Step 1: Run trimming script
 ```
 python scripts/trim_videos.py
 ```
