@@ -55,7 +55,7 @@ scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 .
 
 ### Step 1: Take the contour of fish, adjust kernel size and masking as needed
 ```
-python /scripts/contour_script_CE.py 
+python scripts/contour_script_CE.py 
 ```
 ### Step 2: Check the efficacy of the contour: Watch sample output of the contour to check for skips/inaccuracies
 
