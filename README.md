@@ -1,8 +1,8 @@
 #Preprocess_input_daart
 ### activate daart environment
-
+```
 conda activate daart
-
+```
 ### navigate to the Process_input folder in terminal
 
 cd ~/Desktop/GitHub/Process_input/
