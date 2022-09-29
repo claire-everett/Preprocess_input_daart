@@ -16,16 +16,18 @@ cd ~/Desktop/GitHub/Process_input/
 python scripts/crop_videos.py "lesion3"
 ```
 ### Step 4: Remove all folders containing .h264 (to save space and keep things organized)
-cd videos/
+
 ```
+cd videos/
 rm -r -- ./*/
+cd ..
 ```
 ## Track bodyparts in DeepLabCut
 
 ### Step 1: Sign into axon and transfer files to correct folder in axon
 ```
 ssh cpe2108@axon.rc.zi.columbia.edu
-scp /videos/*.mp4 cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/
+scp videos/*.mp4 cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/
 ```
 ### Step 2: Run top track and label
 ```
