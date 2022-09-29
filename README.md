@@ -38,7 +38,7 @@ sbatch ~/python_scripts/dlc_analyze_top_Feb27update.sh
 
 ## Step 1: Run trimming script
 ```
-python trim_videos.py
+python scripts/trim_videos.py
 ```
 ### Step 3: Make labelled videos once the tracking is done and before you transfer files out of the top_videos folder
 ```
