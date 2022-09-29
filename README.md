@@ -43,7 +43,13 @@ scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*.h5 ./h5/
 scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 ./labeled_videos/
 ```
 ### Step 5: watch labelled video and run .h5 through quality control script
+## Trim video
+### Trimming the video to only the test period allows for a faster contour step
 
+## Step 1: Run trimming script
+```
+python trim_videos.py
+```
 ## Create Contour
 
 ### Step 1: Take the contour of fish, adjust kernel size and masking as needed
