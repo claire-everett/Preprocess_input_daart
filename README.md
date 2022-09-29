@@ -61,16 +61,14 @@ python scripts/contour_script_CE.py
 
 ### Step 3: Use the markers and contours to create basefeatures.csv (daart input)
 ```
-python /scripts/basefeatures_input_CE.py
+python scripts/basefeatures_input_CE.py
 ```
 ***Make sure the left fish has ‘L’ in its name, otherwise the script won’t know to flip it at the end***
 
 ## Supervised Scoring of flaring using Daart
 
-### Step 1: Crop long videos into just test period
 
-
-### Step 2: Input Basefeatures into daart
+### Step 1: Input Basefeatures into daart
 ```
 conda activate daart
 
