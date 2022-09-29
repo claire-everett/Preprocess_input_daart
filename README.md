@@ -76,7 +76,11 @@ cd scripts/
 
 jupyter notebook betta_report.ipynb
 ```
-## click through the notebook to generate .npy of binary time series (found in Process_input>version_0) and daart validation metrices (found in Process_input>daart_output)
+### Step 2: click through the notebook to generate files
+
+### Step 3: Find .npy of binary time series in Process_input>version_0 
+
+### Step 4: Find daart validation metrices in Process_input>daart_output
 
 
 
