@@ -42,7 +42,7 @@ python scripts/trim_videos.py
 ```
 ### Step 3: Make labelled videos once the tracking is done and before you transfer files out of the top_videos folder
 ```
-sbatch ~/python_scripts/dlc_label_top_original.sh
+sbatch ~/python_scripts/dlc_label_Feb27.sh
 ```
 ### Step 4: Export .h5 and labelled videos into designated folders
 ```
