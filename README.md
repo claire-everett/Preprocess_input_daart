@@ -5,7 +5,7 @@ conda activate daart
 ```
 ### navigate to the Process_input folder in terminal
 ```
-cd ~/Desktop/GitHub/Process_input/
+cd ~/Desktop/GitHub/Preprocess_input_daart/
 ```
 ## Convert .h264 files to .mp4, crop videos, and concat together
 
