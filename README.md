@@ -13,7 +13,7 @@ cd ~/Desktop/GitHub/Preprocess_input_daart/
 ### Step 2: Add cropping coordinates for each file in test_coordinates.csv
 ### Step 3: Run cropping script
 ```
-python scripts/crop_videos.py "lesion3"
+python scripts/crop_videos.py "demo"
 ```
 ### Step 4: Remove all folders containing .h264 (to save space and keep things organized)
 
