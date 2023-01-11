@@ -40,6 +40,7 @@ sbatch ~/python_scripts/dlc_label_Feb27.sh
 ### Step 4: Export .h5 and labelled videos into designated folders
 ```
 scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*.h5 ./h5/
+scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*.h5 ./h5_for_basefeatures/
 scp cpe2108@axon.rc.zi.columbia.edu:~/top_Feb27_update/top_videos/*labeled.mp4 ./labeled_videos/
 ```
 ### Step 5: watch labelled video and run .h5 through quality control script
@@ -53,13 +54,15 @@ python scripts/trim_videos.py
 ```
 ## Create Contour
 
-### Step 1: Take the contour of fish, adjust kernel size and masking as needed
+### Step 1: Move videos from "videos" folder to "new_contour_script" folder
+
+### Step 2: Take the contour of fish, adjust kernel size and masking as needed
 ```
 python scripts/contour_script_CE.py 
 ```
-### Step 2: Check the efficacy of the contour: Watch sample output of the contour to check for skips/inaccuracies
+### Step 3: Check the efficacy of the contour: Watch sample output of the contour to check for skips/inaccuracies
 
-### Step 3: Use the markers and contours to create basefeatures.csv (daart input)
+### Step 4: Use the markers and contours to create basefeatures.csv (daart input)
 ```
 python scripts/basefeatures_input_CE.py
 ```
