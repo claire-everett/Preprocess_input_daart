@@ -58,7 +58,7 @@ python scripts/trim_videos.py
 
 ### Step 2: Take the contour of fish, adjust kernel size and masking as needed
 ```
-python scripts/contour_script_FINAL.py 
+python scripts/contour_auto_FINAL.py 
 ```
 ### Step 3: Check the efficacy of the contour: Watch sample output of the contour to check for skips/inaccuracies
 
