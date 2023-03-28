@@ -60,12 +60,16 @@ python scripts/trim_videos.py
 ```
 python scripts/contour_auto_FINAL.py 
 ```
+### *** IMPORTANT: CHANGE THE START AND STOP TIMES TO MATCH THE TEST PERIOD START AND STOP FOR YOUR VIDEOS
+
 ### Step 3: Check the efficacy of the contour: Watch sample output of the contour to check for skips/inaccuracies
 
 ### Step 4: Use the markers and contours to create basefeatures.csv (daart input)
 ```
 python scripts/basefeatures_input_FINAL.py
 ```
+### *** IMPORTANT: CHANGE THE START AND STOP TIMES TO MATCH THE TEST PERIOD START AND STOP FOR YOUR VIDEOS
+
 ***Make sure the left fish has ‘L’ in its name, otherwise the script won’t know to flip it at the end***
 
 ## Supervised Scoring of flaring using Daart
