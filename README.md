@@ -1,3 +1,14 @@
+'''
+This code is for installing and utilizing an automated pipeline for behavior segmentation.
+Steps include: 
+1. cropping/rotating videos
+2. running pose-estimation on videos
+3. taking contour of object in videos
+4. extracting features from pose estimation and contour
+5. inputing features in neural network (dilated TCN)
+
+'''
+
 #Preprocess_input_daart
 ### activate daart environment
 ```
